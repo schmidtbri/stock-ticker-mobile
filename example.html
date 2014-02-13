@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery_mobile.js"></script>
+	<script src="jqfun.js"></script>
+	
+</head> 
+
+	<body onLoad="load()">
+	
+		<div data-role="page" id="loginPage" >
+			<div data-role="header"><h3></h3></div>
+			<div data-role="content">
+			
+				
+				<fieldset data-role="controlgroup">
+					<label id="username_message" for="user_name">User Name:</label>
+					<input type="text" id="user_name"></input>
+				</fieldset>
+				
+				<fieldset data-role="controlgroup">
+					<label id="password_message" for="password">Password:</label>
+					<input type="text" id="password"></input>
+				</fieldset>
+				
+				<input type="submit" id="login" value="LOGIN" onClick="login()"></input>
+				
+			</div>
+			<div data-role="footer" data-position="fixed" ><h3>Copyright 2013</h3></div>		
+
+		</div>
+	
+		<div data-role="page" id="registerPage">
+
+		
+		
+		
+		
+		</div>	
+		
+		<div data-role="page" id="quotePage" data-add-back-btn="true" data-back-btn-text="Back">
+			<div data-role="header"><h3></h3></div>
+			<div data-role="content">
+			
+				<fieldset data-role="controlgroup">
+					<label for="symbol">Symbol:</label>
+					<input type="text" id="symbol"></input>
+				</fieldset>
+				
+				<fieldset data-role="controlgroup">
+					<label for="ticker" id="ticker" data-mini="true">Ticker</label>
+					<input type="submit" id="getQuote" value="GET QUOTE" onClick="getQuote()"></input>
+				</fieldset>
+				
+			</div>
+			<div data-role="footer" data-position="fixed" ><h3>Copyright 2013</h3></div>
+		
+		
+		
+		
+		</div>
+	
+	</body>
+
+</body>
+</html>
